@@ -45,7 +45,7 @@ jobs:
           file: Dockerfile
           push: true
           tags: |
-            afdulfauzan/syseng:${{ github.sha }}
+            afdulfauzan/nginx:${{ github.sha }}
 
       - name: Push to Docker Hub
-        run: docker push afdulfauzan/syseng:${{ github.sha }}
+        run: docker push afdulfauzan/nginx:${{ github.sha }}
