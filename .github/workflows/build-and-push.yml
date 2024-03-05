@@ -45,7 +45,7 @@ jobs:
           file: nginx.dockerfile
           push: true
           tags: |
-            shamirhusein/syseng:${{ github.sha }}
+            afdulfauzan/syseng:${{ github.sha }}
 
       - name: Push to Docker Hub
-        run: docker push shamirhusein/syseng:${{ github.sha }}
+        run: docker push afdulfauzan/syseng:${{ github.sha }}
